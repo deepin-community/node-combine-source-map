@@ -1,0 +1,5 @@
+version=4
+opts="\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,repacksuffix=+ds,compression=xz,repack,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-combine-source-map-$1/" \
+ https://github.com/thlorenz/combine-source-map/tags .*/archive/.*/v?([\d\.]+).tar.gz

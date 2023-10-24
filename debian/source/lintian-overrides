@@ -1,0 +1,3 @@
+# source map are not source only pointer to source in tree. Will fix under lintian
+source-is-missing example/two-files-short.js
+source-contains-prebuilt-javascript-object example/two-files-short.js
