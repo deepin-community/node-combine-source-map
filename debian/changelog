@@ -1,5 +1,69 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-combine-source-map (0.8.0+ds-8) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Fix test for tap >= 15 (--no-cov) (Closes: #1009544)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Tue, 19 Apr 2022 08:01:06 +0200
+
+node-combine-source-map (0.8.0+ds-7) unstable; urgency=medium
+
+  * Team upload
+
+  [ lintian-brush ]
+  * Bump debhelper from old 12 to 13
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse
+  * Update standards version to 4.6.0, no changes needed
+
+  [ Yadd ]
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs auto test & install
+  * Drop dependency to nodejs
+  * Drop unneeded dependency version constraints
+
+ -- Yadd <yadd@debian.org>  Thu, 04 Nov 2021 11:08:42 +0100
+
+node-combine-source-map (0.8.0+ds-6) unstable; urgency=medium
+
+  * Move to /usr/share
+  * Bump compat and policy
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 05 Sep 2019 11:42:50 +0200
+
+node-combine-source-map (0.8.0+ds-5) unstable; urgency=medium
+
+  * Move to javascript section
+  * Move to salsa
+  * Bump compat and policy
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 18 May 2018 11:57:36 +0200
+
+node-combine-source-map (0.8.0+ds-4) unstable; urgency=medium
+
+  * Autopkgtest runtestsuite should depend on node-tap.
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 19 Apr 2017 11:47:32 +0200
+
+node-combine-source-map (0.8.0+ds-3) unstable; urgency=medium
+
+  * Improve autopkgtest test suite by running package testsuite.
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 16 Apr 2017 15:10:52 +0200
+
+node-combine-source-map (0.8.0+ds-2) unstable; urgency=medium
+
+  * Improve autopkgtest test suite.
+  * Fix location of examples.
+  * Fix nocheck under debian/rules.
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 07 Apr 2017 22:17:58 +0200
+
+node-combine-source-map (0.8.0+ds-1) unstable; urgency=low
+
+  * Initial release (Closes: #859095):
+    + Replace internal node-path-is-absolute by depends
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 30 Mar 2017 11:16:43 +0200
